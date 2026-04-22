@@ -10,6 +10,7 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { MagneticWrapper } from '@/components/ui/MagneticWrapper';
 
 interface ScrollExpandMediaProps {
   mediaSrc: string;
@@ -125,28 +126,34 @@ const ScrollExpandProject = ({
         {/* Project Description (Reveals at the very end of expansion) */}
         <motion.div 
             key={`${title}-description-layer`}
-            className="absolute inset-0 z-[100] flex flex-col items-center justify-center p-8 md:p-20 text-white bg-black/85 backdrop-blur-2xl pointer-events-none"
+            className="absolute inset-0 z-[100] flex flex-col items-center justify-center p-8 md:p-20 text-white bg-black/90 backdrop-blur-3xl"
             style={{ 
-                opacity: useTransform(scrollYProgress, [0.8, 0.98], [0, 1])
+                opacity: useTransform(scrollYProgress, [0.85, 0.98], [0, 1]),
+                pointerEvents: useTransform(scrollYProgress, [0, 0.9], ["none", "auto"]) as any
             }}
         >
             <div className="max-w-4xl text-center">
                 <motion.span 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
                   className="text-sm font-bold uppercase tracking-[0.5em] text-neutral-500 mb-8 block"
                 >
                   {category}
                 </motion.span>
-                <h2 className="text-6xl md:text-[9vw] font-black mb-10 tracking-tighter uppercase leading-[0.85]">{title}</h2>
+                <h2 className="text-6xl md:text-[8vw] font-black mb-10 tracking-tighter uppercase leading-[0.85]">{title}</h2>
                 <div className="flex justify-center mb-12">
                     <div className="w-24 h-px bg-white/20" />
                 </div>
-                <p className="text-xl md:text-3xl text-neutral-200 leading-tight font-medium mb-16 max-w-2xl mx-auto italic">
-                    "{description}"
+                <p className="text-2xl md:text-4xl text-neutral-200 leading-tight font-medium mb-16 max-w-3xl mx-auto">
+                    {description}
                 </p>
-                <div className="inline-block px-14 py-5 bg-white text-black font-black uppercase tracking-widest text-xs rounded-full shadow-2xl">
-                    Ver Estudio
+                <div className="flex justify-center">
+                    <MagneticWrapper>
+                        <div 
+                          onClick={() => router.push(`/proyectos/${slug}`)}
+                          className="px-16 py-6 bg-white text-black font-black uppercase tracking-widest text-xs rounded-full shadow-2xl cursor-pointer hover:bg-neutral-200 transition-colors"
+                        >
+                            Ver Estudio —→
+                        </div>
+                    </MagneticWrapper>
                 </div>
             </div>
         </motion.div>

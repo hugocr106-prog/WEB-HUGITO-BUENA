@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { SpecialText } from "./special-text";
 
 export const Preloader = () => {
@@ -76,9 +77,11 @@ export const Preloader = () => {
                                     transition={{ duration: 0.8, ease: "easeOut" }}
                                     className="flex flex-col items-center"
                                 >
-                                    <img 
+                                    <Image 
                                         src="/logo.png" 
                                         alt="HUGO Logo" 
+                                        width={256}
+                                        height={256}
                                         className="w-40 md:w-64 h-auto object-contain invert grayscale"
                                     />
                                 </motion.div>

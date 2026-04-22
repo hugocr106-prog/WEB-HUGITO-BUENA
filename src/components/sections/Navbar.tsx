@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -29,10 +30,12 @@ export const Navbar = () => {
         !isScrolled && "bg-transparent text-black"
       )}
     >
-      <Link href="/" className="relative w-12 h-12">
-        <img 
+      <Link href="/" className="relative w-12 h-12 block">
+        <Image 
           src="/logo.png" 
           alt="HUGO Logo" 
+          width={48}
+          height={48}
           className={cn(
             "w-full h-full object-contain transition-all duration-300",
             !isDark && isScrolled && "invert"

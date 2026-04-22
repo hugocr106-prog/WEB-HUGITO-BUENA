@@ -7,6 +7,7 @@ import { Footer } from "@/components/sections/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import ImageReveal from "@/components/ui/image-reveal";
 import { Projects } from "@/components/sections/Projects";
+import { Skiper31 } from "@/components/ui/text-scroll-animation";
 
 export default function Home() {
   return (
@@ -32,6 +33,8 @@ export default function Home() {
       </section>
 
       <Projects />
+
+      <Skiper31 />
 
       <Footer />
     </main>

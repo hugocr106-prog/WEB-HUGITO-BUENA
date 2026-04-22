@@ -4,6 +4,7 @@ import "./globals.css";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 import { Preloader } from "@/components/ui/Preloader";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ReactLenis } from "lenis/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Preloader />
-        {children}
-        <CookieBanner />
+        <ReactLenis root>
+          <Preloader />
+          {children}
+          <CookieBanner />
+        </ReactLenis>
       </body>
     </html>
   );
