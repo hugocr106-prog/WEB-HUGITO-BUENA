@@ -11,11 +11,20 @@ export const Preloader = () => {
     const [isTextDone, setIsTextDone] = useState(false);
 
     useEffect(() => {
-        const hasSeen = sessionStorage.getItem("hasSeenPreloader");
-        if (hasSeen) return;
+        try {
+            const hasSeen = sessionStorage.getItem("hasSeenPreloader");
+            if (hasSeen) {
+                setIsVisible(false);
+                return;
+            }
+            
+            setIsVisible(true);
+            sessionStorage.setItem("hasSeenPreloader", "true");
+        } catch (e) {
+            // If sessionStorage fails (incognito, etc), just show the preloader once
+            setIsVisible(true);
+        }
 
-        setIsVisible(true);
-        sessionStorage.setItem("hasSeenPreloader", "true");
         document.body.style.overflow = "hidden";
         
         return () => {
