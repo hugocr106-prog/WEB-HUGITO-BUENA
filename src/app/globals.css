@@ -28,7 +28,7 @@ body {
     position: fixed;
     bottom: -30vh;
     right: -10vw;
-    z-index: 0;
+    z-index: 100;
     pointer-events: none;
 }
 

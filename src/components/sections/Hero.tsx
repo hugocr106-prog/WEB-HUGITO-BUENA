@@ -7,15 +7,15 @@ export const Hero = () => {
   return (
     <section className="hero px-6 md:px-16 min-h-screen flex flex-col justify-center pt-32 relative overflow-visible">
       <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] items-center gap-8 h-full">
-        <div className="z-20 relative">
+        <div className="z-10">
           <motion.h1 
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-6xl md:text-[10vw] lg:text-[12vw] leading-[0.8] font-bold flex flex-col items-start"
+            className="text-5xl md:text-[10vw] lg:text-[12vw] leading-[0.8] font-bold flex flex-col items-start"
           >
-            <MagneticText text="DISEÑO" hoverText="CREA" className="inline-flex" textClassName="text-6xl md:text-[10vw] lg:text-[12vw] leading-none" />
-            <MagneticText text="WEB" hoverText="ELEVA" className="inline-flex" textClassName="text-6xl md:text-[10vw] lg:text-[12vw] leading-none" />
+            <MagneticText text="DISEÑO" hoverText="CREA" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
+            <MagneticText text="WEB" hoverText="ELEVA" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
             <MagneticText text="& BRANDING" hoverText="DEFINE" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
           </motion.h1>
           <motion.p 
