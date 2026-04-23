@@ -160,7 +160,7 @@ const Skiper31 = () => {
                       return (
                           <div key={i} className="relative py-2">
                               {/* Background Ghost Text */}
-                              <h2 className="text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-white/5 leading-[0.9]">
+                              <h2 className="text-[9vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-white/5 leading-[0.9]">
                                   {word}
                               </h2>
                               
@@ -172,7 +172,7 @@ const Skiper31 = () => {
                                       WebkitMaskImage: maskStyle,
                                       maskImage: maskStyle,
                                   }}
-                                  className="absolute inset-0 text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)]"
+                                  className="absolute inset-0 text-[9vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)]"
                               >
                                   {word}
                               </motion.h2>
