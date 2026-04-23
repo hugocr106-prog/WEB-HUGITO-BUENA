@@ -19,18 +19,18 @@ const projects = [
     bgImageSrc: "/assets/projects/conda-bg-new.png",
   },
   {
-    title: "AGÜITA VIVA",
-    category: "Diseño Web / Surf & Apnea",
-    description: "Rediseño de la presencia digital de una escuela de surf y apnea pionera en Tenerife. Interfaz dinámica que transmite la energía del Atlántico.",
-    mediaSrc: "/assets/projects/aguita-viva-media.png",
-    bgImageSrc: "/assets/projects/aguita-viva-bg.png",
+    title: "LOCO POLO",
+    category: "Diseño Web / E-commerce",
+    description: "Una experiencia digital vibrante y refrescante para la marca de polos artesanales más divertida. Puro color, usabilidad y conversión.",
+    mediaSrc: "/assets/projects/loco-polo-media.png",
+    bgImageSrc: "/assets/projects/loco-polo-bg.png",
   },
   {
-    title: "LA BREVA",
-    category: "Branding / Coffee Shop",
-    description: "Identidad visual fresca y cercana para una cafetería de especialidad en el corazón de La Laguna. Tradición canaria con un giro contemporáneo.",
-    mediaSrc: "/assets/projects/la-breva-media.png",
-    bgImageSrc: "/assets/projects/la-breva-bg.png",
+    title: "JEITO",
+    category: "Branding / Cerveza Artesana",
+    description: "Identidad visual de raíz para una cerveza artesana 100% tinerfeña. Un diseño minimalista que respeta la herencia y el producto local.",
+    mediaSrc: "/assets/projects/jeito-media.png",
+    bgImageSrc: "/assets/projects/jeito-bg.png",
   }
 ];
 
