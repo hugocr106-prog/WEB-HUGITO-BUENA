@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 import { Preloader } from "@/components/ui/Preloader";
-import { CustomCursor } from "@/components/ui/CustomCursor";
 import { ReactLenis } from "lenis/react";
 
 const geistSans = Geist({
@@ -28,12 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Preloader />
         <ReactLenis root>
-          <Preloader />
           {children}
           <CookieBanner />
         </ReactLenis>
