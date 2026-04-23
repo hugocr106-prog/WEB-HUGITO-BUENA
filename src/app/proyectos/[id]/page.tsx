@@ -25,13 +25,21 @@ const projectData: Record<string, { title: string; category: string; description
     challenge: "Equilibrar el legado histórico de la marca con una estética contemporánea, minimalista y de lujo que pudiera competir en el mercado del retail actual.",
     solution: "Desarrollamos un nuevo sistema de logotipos, tipografías y paleta de colores. El resultado fue una marca que respira elegancia y modernidad, aplicada desde el packaging hasta la presencia digital."
   },
-  "materia": {
-    title: "Materia",
-    category: "Art Direction / Interior",
-    description: "Dirección de arte y narrativa visual para Materia, una marca boutique de mobiliario de autor basada en principios arquitectónicos y minimalismo brutalista.",
-    image: "/assets/projects/materia-media.png",
-    challenge: "Transmitir la nobleza de los materiales y la pureza de las formas a través de una experiencia digital que se sintiera tan sólida y táctil como los propios productos.",
-    solution: "Apostamos por una fotografía de alto contraste y un diseño web que utiliza espacios negativos generosos, permitiendo que cada pieza de mobiliario respire y cuente su propia historia."
+  "loco-polo": {
+    title: "Loco Polo",
+    category: "Diseño Web / E-commerce",
+    description: "Creación de una plataforma digital vibrante y orientada a la conversión para Loco Polo, la marca de polos artesanales más divertida, destacando su colorido catálogo.",
+    image: "/assets/projects/loco-polo-media.png",
+    challenge: "El reto consistía en trasladar la frescura y la estética colorida de sus locales físicos al entorno digital, sin sacrificar la velocidad de carga ni la usabilidad móvil tan necesaria para su público joven.",
+    solution: "Desarrollamos una interfaz de alto contraste sobre un fondo azul piscina refrescante, con un flujo de compra súper intuitivo y fotografías macro hiperrealistas que invitan a dar un bocado. Resultado: incremento notable en la conversión online."
+  },
+  "jeito": {
+    title: "Jeito",
+    category: "Branding / Cerveza Artesana",
+    description: "Construcción de una identidad visual profunda y sobria para Jeito, una cerveza artesana 100% canaria que busca rendir homenaje a la tradición sin caer en los clichés visuales de siempre.",
+    image: "/assets/projects/jeito-media.png",
+    challenge: "Necesitaban diferenciarse radicalmente de las cervezas comerciales, comunicando un producto puro, potente y premium, apelando a la esencia de la tierra pero con un tono cosmopolita.",
+    solution: "Apostamos por un logotipo puramente tipográfico, audaz y pesado. Para el packaging, utilizamos una combinación de texturas mate que evocan la piedra volcánica, transmitiendo carácter y artesanía desde el primer vistazo."
   }
 };
 
