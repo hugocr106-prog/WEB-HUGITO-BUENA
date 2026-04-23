@@ -19,18 +19,18 @@ const projects = [
     bgImageSrc: "/assets/projects/conda-bg-new.png",
   },
   {
-    title: "SOL & SAL",
-    category: "Web Design / Surf Club Gran Canaria",
-    description: "Una experiencia digital inmersiva para una escuela de surf boutique. Enfoque en reservas rápidas y una estética que captura las vibras del Atlántico.",
-    mediaSrc: "/assets/projects/sol-sal-media.png",
-    bgImageSrc: "/assets/projects/sol-sal-bg.png",
+    title: "SURF & SOUL",
+    category: "Web Design / Fuerteventura",
+    description: "Rediseño de plataforma e-commerce y reserva para escuela de surf en el norte de Fuerteventura. Un enfoque vibrante para un público joven y aventurero.",
+    mediaSrc: "/assets/projects/surf-soul-media.png",
+    bgImageSrc: "/assets/projects/surf-soul-bg.png",
   },
   {
-    title: "MOJO MODERNO",
-    category: "Branding / Gourmet Sauce",
-    description: "Identidad visual para una marca que reinventa el sabor canario. Un equilibrio perfecto entre tradición canaria y diseño minimalista contemporáneo.",
-    mediaSrc: "/assets/projects/mojo-media.png",
-    bgImageSrc: "/assets/projects/mojo-bg.png",
+    title: "LOS LAJARES",
+    category: "Branding / Artisanal Cheese",
+    description: "Identidad visual y packaging para una productora artesanal de miel y queso en Canarias. Tradición reinventada con un toque moderno y divertido.",
+    mediaSrc: "/assets/projects/lajares-media.png",
+    bgImageSrc: "/assets/projects/lajares-bg.png",
   }
 ];
 
