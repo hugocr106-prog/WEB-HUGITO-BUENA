@@ -145,23 +145,28 @@ const Skiper31 = () => {
               </p>
               
               <div className="flex flex-col gap-4 items-center">
-                  {["DEFINIR", "DISEÑAR", "DESARROLLAR"].map((word, i) => {
+                  {[
+                      { word: "DEFINIR", desc: "Análisis y estrategia para encontrar la esencia de tu marca." },
+                      { word: "PROYECTAR", desc: "Conceptualización visual que traduce valores en diseño único." },
+                      { word: "DESARROLLAR", desc: "Ejecución técnica de alto rendimiento y lanzamiento digital." }
+                  ].map((item, i) => {
                       // Cada palabra se revela en un tramo distinto del scroll para narrativa secuencial
                       const start = 0.1 + (i * 0.25);
                       const end = start + 0.3;
                       
                       const xOffset = useTransform(scrollYProgress2, [start, end], [20, 0]);
                       const opacity = useTransform(scrollYProgress2, [start - 0.1, start], [0.2, 1]);
+                      const descOpacity = useTransform(scrollYProgress2, [start + 0.1, end], [0, 1]);
                       const maskProgress = useTransform(scrollYProgress2, [start, end], [0, 100]);
                       const maskStyle = useTransform(maskProgress, (p) => 
                         `linear-gradient(to right, white ${p}%, transparent ${p + 15}%)`
                       );
 
                       return (
-                          <div key={i} className="relative py-2">
+                          <div key={i} className="relative py-8 flex flex-col items-center">
                               {/* Background Ghost Text */}
                               <h2 className="text-[8vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-white/5 leading-[0.9]">
-                                  {word}
+                                  {item.word}
                               </h2>
                               
                               {/* Animated Fluid Reveal Text */}
@@ -172,10 +177,18 @@ const Skiper31 = () => {
                                       WebkitMaskImage: maskStyle,
                                       maskImage: maskStyle,
                                   }}
-                                  className="absolute inset-0 text-[8vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)]"
+                                  className="absolute top-8 inset-x-0 text-[8vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)] text-center"
                               >
-                                  {word}
+                                  {item.word}
                               </motion.h2>
+
+                              {/* Description Line */}
+                              <motion.p 
+                                  style={{ opacity: descOpacity }}
+                                  className="mt-6 text-neutral-500 text-sm md:text-xl font-medium tracking-tight max-w-md text-center px-4"
+                              >
+                                  {item.desc}
+                              </motion.p>
                           </div>
                       );
                   })}
