@@ -19,18 +19,18 @@ const projects = [
     bgImageSrc: "/assets/projects/conda-bg-new.png",
   },
   {
-    title: "SURF & SOUL",
-    category: "Web Design / Fuerteventura",
-    description: "Rediseño de plataforma e-commerce y reserva para escuela de surf en el norte de Fuerteventura. Un enfoque vibrante para un público joven y aventurero.",
-    mediaSrc: "/assets/projects/surf-soul-media.png",
-    bgImageSrc: "/assets/projects/surf-soul-bg.png",
+    title: "AGÜITA VIVA",
+    category: "Diseño Web / Surf & Apnea",
+    description: "Rediseño de la presencia digital de una escuela de surf y apnea pionera en Tenerife. Interfaz dinámica que transmite la energía del Atlántico.",
+    mediaSrc: "/assets/projects/aguita-viva-media.png",
+    bgImageSrc: "/assets/projects/aguita-viva-bg.png",
   },
   {
-    title: "LOS LAJARES",
-    category: "Branding / Artisanal Cheese",
-    description: "Identidad visual y packaging para una productora artesanal de miel y queso en Canarias. Tradición reinventada con un toque moderno y divertido.",
-    mediaSrc: "/assets/projects/lajares-media.png",
-    bgImageSrc: "/assets/projects/lajares-bg.png",
+    title: "LA BREVA",
+    category: "Branding / Coffee Shop",
+    description: "Identidad visual fresca y cercana para una cafetería de especialidad en el corazón de La Laguna. Tradición canaria con un giro contemporáneo.",
+    mediaSrc: "/assets/projects/la-breva-media.png",
+    bgImageSrc: "/assets/projects/la-breva-bg.png",
   }
 ];
 
