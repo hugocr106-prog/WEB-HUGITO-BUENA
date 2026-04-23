@@ -110,10 +110,10 @@ const Skiper31 = () => {
 
   return (
     <div className="w-full bg-black">
-        {/* Блок 1 — текст */}
+        {/* Блок 1 — texto */}
         <div
           ref={targetRef}
-          className="relative box-border flex h-[100vh] items-center justify-center gap-[2vw] overflow-hidden bg-black p-[2vw]"
+          className="relative box-border flex h-[120vh] items-center justify-center gap-[2vw] overflow-hidden bg-black p-[2vw]"
         >
           <div
             className="w-full max-w-4xl text-center text-5xl md:text-8xl font-black uppercase tracking-tighter text-white"
@@ -132,19 +132,20 @@ const Skiper31 = () => {
         </div>
 
         
+        {/* Блок 2 — Método */}
         <div
           ref={targetRef2}
-          className="relative -mt-[30vh] md:-mt-[60vh] box-border flex h-[150vh] flex-col items-center justify-center bg-black"
+          className="relative -mt-[30vh] md:-mt-[40vh] box-border flex h-[150vh] flex-col items-center justify-center bg-black"
         >
           <div className="w-full flex-col flex items-center justify-center p-6 md:p-[2vw]">
-              <p className="flex items-center justify-center gap-3 text-2xl md:text-3xl font-bold tracking-tighter uppercase text-white/30 mb-12">
+              <p className="flex items-center justify-center gap-3 text-2xl md:text-3xl font-bold tracking-tighter uppercase text-white/30 mb-20">
                 <Bracket className="h-10 opacity-30" />
                 <span>MÉTODO</span>
                 <Bracket className="h-10 scale-x-[-1] opacity-30" />
               </p>
               
               <div className="flex flex-col gap-4 items-center">
-                  {["DEFINIR", "CREAR", "DESARROLLAR"].map((word, i) => {
+                  {["DEFINIR", "DISEÑAR", "DESARROLLAR"].map((word, i) => {
                       // Cada palabra se revela en un tramo distinto del scroll para narrativa secuencial
                       const start = 0.1 + (i * 0.25);
                       const end = start + 0.3;
@@ -185,7 +186,7 @@ const Skiper31 = () => {
         {/* Блок 3 — Contacto */}
         <div
           ref={targetRef3}
-          className="relative -mt-[40vh] md:-mt-[70vh] box-border flex h-[100vh] flex-col items-center justify-center gap-[4vw] overflow-hidden bg-black p-6 md:p-[2vw]"
+          className="relative -mt-[30vh] md:-mt-[40vh] box-border flex h-[120vh] flex-col items-center justify-center gap-[4vw] overflow-hidden bg-black p-6 md:p-[2vw]"
         >
           <p className="flex items-center justify-center gap-3 text-2xl md:text-5xl font-black tracking-tighter uppercase text-white">
             <Bracket className="h-12 text-white" />
