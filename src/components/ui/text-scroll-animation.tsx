@@ -116,7 +116,7 @@ const Skiper31 = () => {
           className="relative box-border flex h-[150vh] items-center justify-center gap-[2vw] overflow-hidden bg-black p-[2vw]"
         >
           <div
-            className="w-full max-w-4xl text-center text-6xl md:text-8xl font-black uppercase tracking-tighter text-white"
+            className="w-full max-w-4xl text-center text-5xl md:text-8xl font-black uppercase tracking-tighter text-white"
             style={{ perspective: "1000px" }}
           >
             {characters.map((char, index) => (
