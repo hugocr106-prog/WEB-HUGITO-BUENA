@@ -135,9 +135,9 @@ const Skiper31 = () => {
         {/* Блок 2 — Método */}
         <div
           ref={targetRef2}
-          className="relative -mt-[30vh] md:-mt-[40vh] box-border flex h-[150vh] flex-col items-center justify-center bg-black"
+          className="relative -mt-[20vh] md:-mt-[40vh] box-border flex h-[180vh] flex-col items-center justify-center bg-black"
         >
-          <div className="w-full flex-col flex items-center justify-center p-6 md:p-[2vw]">
+          <div className="w-full flex-col flex items-center justify-center p-6 md:p-[2vw] pb-32">
               <p className="flex items-center justify-center gap-3 text-2xl md:text-3xl font-bold tracking-tighter uppercase text-white/30 mb-20">
                 <Bracket className="h-10 opacity-30" />
                 <span>MÉTODO</span>
@@ -160,7 +160,7 @@ const Skiper31 = () => {
                       return (
                           <div key={i} className="relative py-2">
                               {/* Background Ghost Text */}
-                              <h2 className="text-[9vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-white/5 leading-[0.9]">
+                              <h2 className="text-[8vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-white/5 leading-[0.9]">
                                   {word}
                               </h2>
                               
@@ -172,7 +172,7 @@ const Skiper31 = () => {
                                       WebkitMaskImage: maskStyle,
                                       maskImage: maskStyle,
                                   }}
-                                  className="absolute inset-0 text-[9vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)]"
+                                  className="absolute inset-0 text-[8vw] sm:text-4xl md:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-white to-teal-500 leading-[0.9] drop-shadow-[0_0_15px_rgba(94,234,212,0.3)]"
                               >
                                   {word}
                               </motion.h2>
@@ -186,7 +186,7 @@ const Skiper31 = () => {
         {/* Блок 3 — Contacto */}
         <div
           ref={targetRef3}
-          className="relative -mt-[30vh] md:-mt-[40vh] box-border flex h-[120vh] flex-col items-center justify-center gap-[4vw] overflow-hidden bg-black p-6 md:p-[2vw]"
+          className="relative -mt-[15vh] md:-mt-[40vh] box-border flex h-[120vh] flex-col items-center justify-center gap-[4vw] overflow-hidden bg-black p-6 md:p-[2vw]"
         >
           <p className="flex items-center justify-center gap-3 text-2xl md:text-5xl font-black tracking-tighter uppercase text-white">
             <Bracket className="h-12 text-white" />
