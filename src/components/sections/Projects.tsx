@@ -19,11 +19,18 @@ const projects = [
     bgImageSrc: "/assets/projects/conda-bg-new.png",
   },
   {
-    title: "MATERIA",
-    category: "Art Direction / Interior",
-    description: "Narrativa visual para una marca de mobiliario de autor. Un ejercicio de minimalismo brutalista y luz natural.",
-    mediaSrc: "/assets/projects/materia-media.png",
-    bgImageSrc: "/assets/projects/materia-bg.png",
+    title: "SOL & SAL",
+    category: "Web Design / Surf Club Gran Canaria",
+    description: "Una experiencia digital inmersiva para una escuela de surf boutique. Enfoque en reservas rápidas y una estética que captura las vibras del Atlántico.",
+    mediaSrc: "/assets/projects/sol-sal-media.png",
+    bgImageSrc: "/assets/projects/sol-sal-bg.png",
+  },
+  {
+    title: "MOJO MODERNO",
+    category: "Branding / Gourmet Sauce",
+    description: "Identidad visual para una marca que reinventa el sabor canario. Un equilibrio perfecto entre tradición canaria y diseño minimalista contemporáneo.",
+    mediaSrc: "/assets/projects/mojo-media.png",
+    bgImageSrc: "/assets/projects/mojo-bg.png",
   }
 ];
 
