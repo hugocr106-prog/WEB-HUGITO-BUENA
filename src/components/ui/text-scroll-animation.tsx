@@ -151,12 +151,12 @@ const Skiper31 = () => {
                       { word: "DESARROLLAR", desc: "Ejecución técnica de alto rendimiento y lanzamiento digital." }
                   ].map((item, i) => {
                       // Cada palabra se revela en un tramo distinto del scroll para narrativa secuencial
-                      const start = 0.05 + (i * 0.3);
-                      const end = start + 0.3;
+                      const start = 0.1 + (i * 0.28);
+                      const end = Math.min(1, start + 0.25);
                       
                       const xOffset = useTransform(scrollYProgress2, [start, end], [20, 0]);
-                      const opacity = useTransform(scrollYProgress2, [start - 0.1, start], [0.1, 1]);
-                      const descOpacity = useTransform(scrollYProgress2, [start + 0.1, end], [0, 1]);
+                      const opacity = useTransform(scrollYProgress2, [Math.max(0, start - 0.1), start], [0.1, 1]);
+                      const descOpacity = useTransform(scrollYProgress2, [Math.min(end, start + 0.1), end], [0, 1]);
                       const maskProgress = useTransform(scrollYProgress2, [start, end], [0, 100]);
                       const maskStyle = useTransform(maskProgress, (p) => 
                         `linear-gradient(to right, white ${p}%, transparent ${p + 15}%)`
