@@ -31,10 +31,10 @@ export function Projects() {
   return (
     <section id="projects" className="relative bg-black">
       {/* Section Header */}
-      <div className="bg-black text-white px-[4rem] pt-32 pb-10 relative z-20">
-        <div className="container-custom">
+      <div className="bg-black text-white px-6 md:px-16 pt-32 pb-10 relative z-20">
+        <div className="mx-auto max-w-7xl">
             <span className="text-sm font-bold uppercase tracking-widest text-neutral-500 mb-4 block">Portafolio</span>
-            <h2 className="text-7xl font-black tracking-tighter">PROYECTOS<br/>DESTACADOS</h2>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">PROYECTOS<br/>DESTACADOS</h2>
         </div>
       </div>
 

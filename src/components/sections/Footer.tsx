@@ -6,7 +6,7 @@ import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="bg-black text-white py-20 px-[4rem] text-center">
+    <footer id="footer" className="bg-black text-white py-20 px-6 md:px-16 text-center">
       <div className="flex justify-center mb-12">
         <MagneticWrapper>
           <Image 

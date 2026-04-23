@@ -6,7 +6,13 @@
   --primary: #000000;
   --secondary: #666666;
   --font-body: 'Inter', sans-serif;
-  --container-padding: 4rem;
+  --container-padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 4rem;
+  }
 }
 
 body {
@@ -28,9 +34,9 @@ body {
 
 @media (max-width: 1024px) {
     .hero-img {
-        height: 70vh;
-        position: relative;
-        bottom: 0;
-        margin-top: 2rem;
+        height: 60vh;
+        right: -20vw;
+        bottom: -10vh;
+        opacity: 0.6;
     }
 }
