@@ -6,28 +6,20 @@ import Image from "next/image";
 import { SpecialText } from "./special-text";
 
 export const Preloader = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const [showLogo, setShowLogo] = useState(false);
     const [isTextDone, setIsTextDone] = useState(false);
 
     useEffect(() => {
-        try {
-            const hasSeen = sessionStorage.getItem("hasSeenPreloader");
-            if (hasSeen) {
-                setIsVisible(false);
-                return;
-            }
-            
-            setIsVisible(true);
-            sessionStorage.setItem("hasSeenPreloader", "true");
-        } catch (e) {
-            // If sessionStorage fails (incognito, etc), just show the preloader once
-            setIsVisible(true);
-        }
+        const timer = setTimeout(() => {
+            setIsVisible(false);
+            document.body.style.overflow = "auto";
+        }, 6000); 
 
         document.body.style.overflow = "hidden";
         
         return () => {
+            clearTimeout(timer);
             document.body.style.overflow = "auto";
         };
     }, []);
