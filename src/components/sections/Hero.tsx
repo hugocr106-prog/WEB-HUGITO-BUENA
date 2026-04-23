@@ -5,7 +5,7 @@ import { MagneticText } from "@/components/ui/morphing-cursor";
 
 export const Hero = () => {
   return (
-    <section className="hero px-6 md:px-16 min-h-screen flex flex-col justify-center pt-32 relative overflow-visible">
+    <section className="hero px-6 md:px-16 min-h-[80vh] md:min-h-screen flex flex-col justify-start md:justify-center pt-20 md:pt-32 relative overflow-visible">
       <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] items-center gap-8 h-full">
         <div className="z-10">
           <motion.h1 
