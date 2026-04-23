@@ -12,11 +12,11 @@ export const Hero = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-5xl md:text-[10vw] lg:text-[12vw] leading-[0.8] font-bold flex flex-col items-start"
+            className="text-4xl md:text-7xl lg:text-8xl leading-[0.8] font-bold flex flex-col items-start"
           >
-            <MagneticText text="DISEÑO" hoverText="CREA" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
-            <MagneticText text="WEB" hoverText="ELEVA" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
-            <MagneticText text="& BRANDING" hoverText="DEFINE" className="inline-flex" textClassName="text-5xl md:text-[10vw] lg:text-[12vw] leading-none" />
+            <MagneticText text="DISEÑO" hoverText="CREA" className="inline-flex" textClassName="text-4xl md:text-7xl lg:text-8xl leading-none" />
+            <MagneticText text="WEB" hoverText="ELEVA" className="inline-flex" textClassName="text-4xl md:text-7xl lg:text-8xl leading-none" />
+            <MagneticText text="& BRANDING" hoverText="DEFINE" className="inline-flex" textClassName="text-4xl md:text-7xl lg:text-8xl leading-none" />
           </motion.h1>
           <motion.p 
             initial={{ y: 30, opacity: 0 }}
