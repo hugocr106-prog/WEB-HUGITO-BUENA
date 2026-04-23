@@ -6,20 +6,19 @@ import Image from "next/image";
 import { SpecialText } from "./special-text";
 
 export const Preloader = () => {
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
     const [showLogo, setShowLogo] = useState(false);
     const [isTextDone, setIsTextDone] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(false);
-            document.body.style.overflow = "auto";
-        }, 6000); 
+        const hasSeen = sessionStorage.getItem("hasSeenPreloader");
+        if (hasSeen) return;
 
+        setIsVisible(true);
+        sessionStorage.setItem("hasSeenPreloader", "true");
         document.body.style.overflow = "hidden";
         
         return () => {
-            clearTimeout(timer);
             document.body.style.overflow = "auto";
         };
     }, []);
